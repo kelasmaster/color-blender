@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Blender</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Color Blender</h1>
+      <p>Blend your favorite colors!</p>
+    </header>
+    <main>
+      <section class="controls">
+        <label for="red">Red</label>
+        <input type="range" id="red" min="0" max="255" value="0">
+        <span id="red-value">0</span>
+
+        <label for="blue">Blue</label>
+        <input type="range" id="blue" min="0" max="255" value="0">
+        <span id="blue-value">0</span>
+
+        <label for="yellow">Yellow</label>
+        <input type="range" id="yellow" min="0" max="255" value="0">
+        <span id="yellow-value">0</span>
+      </section>
+
+      <section class="preview">
+        <div id="color-box"></div>
+        <p>RGB: <span id="rgb-value">rgb(0, 0, 0)</span></p>
+        <p>HEX: <span id="hex-value">#000000</span></p>
+      </section>
+
+      <button id="reset">Reset</button>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
